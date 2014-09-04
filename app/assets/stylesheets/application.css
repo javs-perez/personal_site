@@ -12,5 +12,8 @@
  *
  *= require_tree .
  *= require font-awesome
+ *= require agency
+ *= require mixins
+ *= require bootstrap.min
  *= require_self
  */

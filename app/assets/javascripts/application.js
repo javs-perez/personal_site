@@ -11,6 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require agency
+//= require bootstrap
+//= require cbpAnimatedHeader.js
+//= require contact_me
+//= require classie
+//= require jquery.easing
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks

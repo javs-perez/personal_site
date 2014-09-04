@@ -33,6 +33,9 @@ gem 'less-rails'
 # Use font-awesome
 gem 'font-awesome-rails'
 
+# Using jquery.easing
+gem 'jquery-easing-rails'
+
 
 
 # Use ActiveModel has_secure_password
