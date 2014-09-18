@@ -33,8 +33,24 @@ gem 'less-rails'
 # Use font-awesome
 gem 'font-awesome-rails'
 
+#Forms, mail {
+gem 'mail_form'
+gem 'simple_form'
+#}
+
 # Using jquery.easing
 gem 'jquery-easing-rails'
+
+# Development (Optional) {
+gem 'better_errors', group: :development
+gem 'quiet_assets', group: :development
+# }
+# Development Guard {
+gem 'guard-rails', group: :development
+gem 'guard-livereload', group: :development
+gem 'rack-livereload', group: :development
+gem 'guard-bundler', group: :development
+# }
 
 
 
