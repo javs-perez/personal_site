@@ -12,7 +12,7 @@ Rails.application.config.assets.precompile += %w( bootstrap.js )
 
 Rails.application.config.assets.precompile += %w( classie.js )
 
-Rails.application.config.assets.precompile += %w( cbpAnimateHeader )
+Rails.application.config.assets.precompile += %w( cbpAnimatedHeader.js )
 
 Rails.application.config.assets.precompile += %w( jqBootstrapValidation.js )
 
