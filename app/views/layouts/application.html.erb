@@ -24,34 +24,36 @@
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  <%= render "shim" %>
+  <%= render "layouts/shim" %>
 
 </head>
 
 <body id="page-top" class="index">
 
-  <%= render "navigation" %>
+  <%= render "layouts/navigation" %>
 
-  <%= render "header" %>
+  <%= render "layouts/header" %>
 
-  <%= render "services" %>
+  <%= render "layouts/services" %>
 
-  <%= render "portfolio" %>
+  <%= render "layouts/portfolio" %>
 
-  <%= render "about" %>
+  <%= render "layouts/about" %>
 
-  <%= render "team" %>
+  <%= render "layouts/team" %>
 
-  <%= render "footer" %>
+  <%= yield %>
+
+  <%= render "layouts/footer" %>
 
   <!-- Portfolio Modals -->
   <!-- Use the modals below to showcase details about your portfolio projects! -->
 
-  <%= render "modal1" %>
+  <%= render "layouts/modal1" %>
 
-  <%= render "modal2" %>
+  <%= render "layouts/modal2" %>
 
-  <%= render "modal3" %>  
+  <%= render "layouts/modal3" %>  
 
   
 
