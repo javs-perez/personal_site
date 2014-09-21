@@ -16,8 +16,6 @@ Rails.application.config.assets.precompile += %w( cbpAnimatedHeader.js )
 
 Rails.application.config.assets.precompile += %w( jqBootstrapValidation.js )
 
-Rails.application.config.assets.precompile += %w( contact_me.js )
-
 Rails.application.config.assets.precompile += %w( agency.js )
 
 Rails.application.config.assets.precompile += %w( font-awesome.css )
