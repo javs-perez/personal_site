@@ -34,6 +34,19 @@
 
   <%= render "layouts/header" %>
 
+  <div class="container">
+    <% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+    <div class="alert alert-#{name == :notice ? "success" : "error"}">
+      <a class="close" data-dismiss="alert">
+        &times;
+      </a>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+
   <%= render "layouts/services" %>
 
   <%= render "layouts/portfolio" %>
@@ -76,16 +89,5 @@
   <%= javascript_include_tag "agency.js" %>
 
 </body>
-<div class="container">
-  <% flash.each do |name, msg| %>
-    <% if msg.is_a?(String) %>
-      <div class="alert alert-#{name == :notice ? "success" : "error"}">
-        <a class="close" data-dismiss="alert">
-          &times;
-        </a>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      </div>
-    <% end %>
-  <% end %>
-</div>
+
 </html>
