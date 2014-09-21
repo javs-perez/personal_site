@@ -15,7 +15,7 @@
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <%= f.input :email, :required => true, :class => "form-control", :placeholder => "Your Email", :id => "email", :label => false %>
+                <%= f.input :email, :required => true, :class => "form-control", :placeholder => "Your Email", :id => "email", :label => false, :type => "email" %>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -40,5 +40,17 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <% flash.each do |name, msg| %>
+    <% if msg.is_a?(String) %>
+    <div class="alert alert-#{name == :notice ? "success" : "error"}">
+      <a class="close" data-dismiss="alert">
+        &times;
+      </a>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+    <% end %>
+    <% end %>
   </div>
 </section>
