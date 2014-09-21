@@ -41,8 +41,8 @@ Rails.application.configure do
     :address => 'smtpout.secureserver.net',
     :domain  => 'www.javierperez.co',
     :port      => 80,
-    :user_name => 'jp@javierperez.co',
-    :password => '123456789',
+    :user_name => ENV['EMAIL'],
+    :password => ENV['PASSWORD'],
     :authentication => :login
   }
 end
