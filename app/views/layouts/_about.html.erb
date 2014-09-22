@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">About</h2>
-        <h3 class="section-subheading text-muted">A little about me, do not want to be too narcissistic. I mean I already put my face on this website.</h3>
+        <h3 class="section-subheading text-muted">A little about me, do not want to be too narcissistic. I mean you already are going to see my face on this website.</h3>
       </div>
     </div>
     <div class="row">
@@ -12,7 +12,7 @@
         <ul class="timeline">
           <li>
             <div class="timeline-image">
-            <%= image_tag("about/chile_escudo.jpg", :class => "img-circle img-responsive") %>
+            <%= link_to image_tag("about/chile_escudo.jpg", :class => "img-circle img-responsive"), "http://en.wikipedia.org/wiki/Chile", :target => "_blank" %>
 
             </div>
             <div class="timeline-panel">
@@ -26,7 +26,7 @@
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <%= image_tag("about/fsu-logo.jpg", :class => "img-circle img-responsive") %>
+              <%= link_to image_tag("about/fsu-logo.jpg", :class => "img-circle img-responsive"), "https://www.fsu.edu/", :target => "_blank" %>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -39,7 +39,7 @@
           </li>
           <li>
             <div class="timeline-image">
-              <%= image_tag("about/ptr.jpg", :class => "img-circle img-responsive") %>
+              <%= link_to image_tag("about/ptr.jpg", :class => "img-circle img-responsive"), "http://www.propertytitlereports.com", :target => "_blank" %>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -52,7 +52,7 @@
           </li>
           <li class="timeline-inverted">
             <div class="timeline-image">
-              <%= link_to image_tag("about/wyncode.jpg", :class => "img-circle img-responsive"), "http://www.wyncode.co" %>
+              <%= link_to image_tag("about/wyncode.jpg", :class => "img-circle img-responsive"), "http://www.wyncode.co", :target => "_blank" %>
         
             </div>
             <div class="timeline-panel">
